@@ -1,13 +1,25 @@
 /*
- Theme Name:   Sparkling Child
- Theme URI:    https://github.com/sarbot/sparkling-child/
- Description:  Child Theme of https://colorlib.com/wp/themes/sparkling/
- Author:       Sarbot
- Author URI:   http://sarbot.de
- Template:     sparkling
- Version:      1.0.0
- License:      GNU General Public License v2 or later
- License URI:  http://www.gnu.org/licenses/gpl-2.0.html
- Tags:         light, two-columns, right-sidebar, responsive-layout, accessibility-ready
- Text Domain:  sparkling-child
+Theme Name: Sparkling Child
+Theme URI: https://colorlib.com/wp/themes/sparkling
+Author: Sarbot
+Author URI: http://sarbot.de
+Description: Sparkling is a clean minimal and responsive WordPress theme. This child theme includes my personal changes to the Sparkling theme. Original parent theme developed by colorlib https://colorlib.com/wp/themes/sparkling/
+Template: sparkling
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: sparkling
+Domain Path: /languages/
+Tags: green, light, white, gray, black, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, photoblogging, left-sidebar, translation-ready, custom-background, custom-colors, custom-menu, featured-images, full-width-template, post-formats, theme-options, threaded-comments
+
+
+This theme, like WordPress, is licensed under the GPL.
+
+sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+
 */
+
+.post-thumb {
+	padding: 10px;
+	padding-right: 20px;
+}
+
