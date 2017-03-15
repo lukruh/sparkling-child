@@ -20,7 +20,7 @@ get_header();
         <?php the_content(); ?>
         <?php
           $args = array(
-            'post_type' => 'portfolio', // enter custom post type
+            'post_type' => 'games', // enter custom post type
             'orderby' => 'date',
             'order' => 'DESC',
           );
@@ -28,10 +28,11 @@ get_header();
           $loop = new WP_Query( $args );
           if( $loop->have_posts() ):
           while( $loop->have_posts() ): $loop->the_post(); global $post;
-            echo '<div class="portfolio">';
+            echo '<div class="game-entry">';
+            echo '<h2> TITLE </h2>';
             echo '<h3>' . get_the_title() . '</h3>';
-            echo '<div class="portfolio-image">'. get_the_post_thumbnail( $id ).'</div>';
-            echo '<div class="portfolio-work">'. get_the_content().'</div>';
+            //echo '<div class="portfolio-image">'. get_the_post_thumbnail( $id ).'</div>';
+            //echo '<div class="portfolio-work">'. get_the_content().'</div>';
             echo '</div>';
           endwhile;
           endif;
