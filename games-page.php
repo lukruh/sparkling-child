@@ -17,12 +17,12 @@ get_header();
       </header>
 
       <div class="entry-content">
-       <h1> I'm in the games-page.php </h1>
         <?php the_content(); ?>
         <?php
           $args = array(
-            'post_type' => 'games', // enter custom post type
-            'orderby' => 'date'
+            'post_type' => 'game', // enter custom post type
+            'orderby' => 'date',
+            'order' => 'DESC',
           );
               
           $loop = new WP_Query( $args );
