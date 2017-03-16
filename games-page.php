@@ -21,12 +21,12 @@ get_header();
         <?php
           $args = array(
             'post_type' => 'games', // enter custom post type
-            'orderby' => 'date',
-            'order' => 'DESC',
+            'orderby' => 'date'
           );
               
           $loop = new WP_Query( $args );
           if( $loop->have_posts() ):
+          echo 'test';
           while( $loop->have_posts() ): $loop->the_post(); global $post;
             echo '<div class="game-entry">';
             echo '<h2> TITLE </h2>';
