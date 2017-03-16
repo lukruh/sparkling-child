@@ -17,6 +17,7 @@ get_header();
       </header>
 
       <div class="entry-content">
+       <h1> I'm in the games-page.php </h1>
         <?php the_content(); ?>
         <?php
           $args = array(
