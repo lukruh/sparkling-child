@@ -22,3 +22,8 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
 	padding-right: 20px;
 }
 
+#searchform-item{
+	width: 250px;
+	padding-top: 20px;
+	padding-left: 20px;
+}

@@ -3,7 +3,7 @@
 
 add_filter('wp_nav_menu_items','add_search_box', 10, 2);
 function add_search_box($items, $args) {
-    if($args->theme_location == 'header-menu') {
+    if($args->theme_location == 'primary') {
         ob_start();
         get_search_form();
         $searchform = ob_get_contents();
