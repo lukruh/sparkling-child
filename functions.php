@@ -20,6 +20,20 @@ function my_child_theme_setup() {
 }
 add_action( 'after_setup_theme', 'my_child_theme_setup' );
 
+add_filter( 'upload_mimes', 'edit_upload_mimes' );
+function edit_upload_mimes($mimes) {
+     $mime_types = array( 
+        'pdf' => 'application/pdf',
+        'tar' => 'application/x-tar',
+         'zip' => 'application/zip',
+        'gz|gzip' => 'application/x-gzip',
+        'rar' => 'application/rar',
+        '7z' => 'application/x-7z-compressed',
+	'apk' => '<code>application/vnd.android.package-archive</code>',
+     );
+    return array_merge($mime_types,$mimes);              
+}
+
 
 
 // Queue parent style followed by child/customized style
