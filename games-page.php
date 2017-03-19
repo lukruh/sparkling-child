@@ -29,9 +29,8 @@ get_header();
           if( $loop->have_posts() ):
           echo 'test';
           while( $loop->have_posts() ): $loop->the_post(); global $post;
-            echo '<div class="game-entry">';
-            echo '<h2> TITLE </h2>';
-            echo '<h3>' . get_the_title() . '</h3>';
+            echo '<div class="game-entry well">';
+            echo '<strong>' . get_the_title() . '</strong>';
             //echo '<div class="portfolio-image">'. get_the_post_thumbnail( $id ).'</div>';
             //echo '<div class="portfolio-work">'. get_the_content().'</div>';
             echo '</div>';
