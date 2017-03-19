@@ -4,7 +4,6 @@
  */
 
 get_header();
-echo 'test1';
 ?>
 
 <div id="primary" class="content-area">
@@ -28,8 +27,9 @@ echo 'test1';
               
           $loop = new WP_Query( $args );
           if( $loop->have_posts() ):
-          echo 'test';
           while( $loop->have_posts() ): $loop->the_post(); global $post;
+		$custom_fields = get_post_custom();
+		echo '<a href="'.$custom_fields['wpcf-apk-url'][0].'">apk</button></a>';
             echo '<div class="game-entry post-inner-content">';
             echo '<h4><a href="'.get_the_permalink().'">' . get_the_title() . '</a></h4>';
             //echo '<div class="portfolio-image">'. get_the_post_thumbnail( $id ).'</div>';
