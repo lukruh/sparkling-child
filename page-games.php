@@ -32,7 +32,7 @@ get_header();
 		$custom_fields = get_post_custom();
 		echo '<a href="'.$custom_fields['wpcf-apk-url'][0].'">apk</button></a>';
             echo '<div class="game-entry post-inner-content">';
-            echo '<span class="game-header><a href="'.get_the_permalink().'">' . get_the_title() . '</a></span>';
+            echo '<div class="game-header><a href="'.get_the_permalink().'">' . get_the_title() . '</a></div>';
             //echo '<div class="portfolio-image">'. get_the_post_thumbnail( $id ).'</div>';
             //echo '<div class="portfolio-work">'. get_the_content().'</div>';
             echo '</div>';
