@@ -28,7 +28,7 @@ get_header();
           $loop = new WP_Query( $args );
           if( $loop->have_posts() ):
           while( $loop->have_posts() ): $loop->the_post(); global $post;
-	      <div class=col-md-4>
+	      echo '<div class=col-md-4>';
 		$custom_fields = get_post_custom();
 		echo '<a href="'.$custom_fields['wpcf-apk-url'][0].'">apk</button></a>';
             echo '<div class="game-entry post-inner-content">';
@@ -37,7 +37,7 @@ get_header();
             //echo '<div class="portfolio-work">'. get_the_content().'</div>';
             echo '</div>';
 	      
-	</div>
+	echo '</div>';
           endwhile;
           endif;
         ?>
