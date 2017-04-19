@@ -10,7 +10,7 @@ get_header();
 <main id="main" class="site-main" role="main">
 
     <?php while ( have_posts() ) : the_post(); ?>
-        
+        <div class=col-md-4>
       <header class="entry-header">
         <?php the_post_thumbnail(); ?>
         <h1 class="entry-title"><?php the_title(); ?></h1>
@@ -39,7 +39,8 @@ get_header();
           endif;
         ?>
       </div><!-- #entry-content -->
-      <?php comments_template( '', true ); ?>               
+      <?php comments_template( '', true ); ?>
+	</div>
     <?php endwhile; // end of the loop. ?>                
   </main><!-- #main -->
 </div><!-- #primary -->
