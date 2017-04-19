@@ -42,7 +42,6 @@ get_header();
           endif;
         ?>
       </div><!-- #entry-content -->
-      <?php comments_template( '', false ); ?>
     <?php endwhile; // end of the loop. ?>                
   </main><!-- #main -->
 </div><!-- #primary -->
